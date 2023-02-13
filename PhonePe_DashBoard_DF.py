@@ -249,11 +249,11 @@ with st.sidebar:
     top_states_a = top_states.sort_values(by=['AppOpenings'], ascending=False)  
     if opt=='Registered Users':
         rt=top_states_r[1:6]
-        st.markdown("# :green[Top 5 States With Highest Registered Users :curly_haired_man::curly_haired_woman:]")
+        st.markdown("# :green[Top 5 States With Highest Registered Users in "+year+" Q"+quarter+" :curly_haired_man::curly_haired_woman:]")
         st.markdown(rt[[ 'State','Registered_Users']].style.hide(axis="index").to_html(), unsafe_allow_html=True)
     if opt=='AppOpenings':
         at=top_states_a[1:6]
-        st.markdown("# :orange[Top 5 States With Highest PhonePeApp Openings :iphone:]")
+        st.markdown("# :orange[Top 5 States With Highest PhonePeApp Openings in "+year+" Q"+quarter+" :iphone:]")
         st.markdown(at[['State','AppOpenings']].style.hide(axis="index").to_html(), unsafe_allow_html=True)
    
 
