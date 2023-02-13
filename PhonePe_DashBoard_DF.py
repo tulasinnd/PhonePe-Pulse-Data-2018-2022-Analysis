@@ -196,7 +196,7 @@ st.info('**:orange[The above donut chat and below bar graph shows how the users 
 #---------------------------------------------------FIGURE7 BAR-------------------------------------------------------------
 b = b.sort_values(by=['Registered_Users_Count'])
 fig4= px.bar(b, x='brand', y='Registered_Users_Count',color="Registered_Users_Count",
-            title='In '+state+' the Brand Share distribution in '+y,
+            title='In '+state+' the Brand Share distribution in '+str(y),
             color_continuous_scale="oranges",)
 st.plotly_chart(fig4) 
 # --------------------------------------------------FIGURE8 BAR-------------------------------------------
