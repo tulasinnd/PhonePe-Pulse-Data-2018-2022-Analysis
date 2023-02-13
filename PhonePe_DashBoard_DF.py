@@ -3,13 +3,20 @@ import plotly.express as px
 import streamlit as st 
 import plotly.graph_objects as go
 
-Data_Aggregated_Transaction_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_Transaction_Table.csv')
-Data_Aggregated_User_Summary_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_User_Summary_Table.csv')
-Data_Aggregated_User_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_User_Table.csv')
-Scatter_Geo_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_Districts_Longitude_Latitude.csv')
-Coropleth_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_IndiaStates_TU.csv')
-Data_Map_Transaction_df = pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_Transaction_Table.csv')
-deck=Scatter_Geo_Dataset.copy()
+# Data_Aggregated_Transaction_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_Transaction_Table.csv')
+# Data_Aggregated_User_Summary_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_User_Summary_Table.csv')
+# Data_Aggregated_User_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Aggregated_User_Table.csv')
+# Scatter_Geo_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_Districts_Longitude_Latitude.csv')
+# Coropleth_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_IndiaStates_TU.csv')
+# Data_Map_Transaction_df = pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Data_Map_Transaction_Table.csv')
+
+Data_Aggregated_Transaction_df= pd.read_csv(r'data/Data_Aggregated_Transaction_Table.csv')
+Data_Aggregated_User_Summary_df= pd.read_csv(r'data/Data_Aggregated_User_Summary_Table.csv')
+Data_Aggregated_User_df= pd.read_csv(r'data/Data_Aggregated_User_Table.csv')
+Scatter_Geo_Dataset =  pd.read_csv(r'data/Data_Map_Districts_Longitude_Latitude.csv')
+Coropleth_Dataset =  pd.read_csv(r'data/Data_Map_IndiaStates_TU.csv')
+Data_Map_Transaction_df = pd.read_csv(r'data/Data_Map_Transaction_Table.csv')
+
 # -------------------------------------FIGURE1 MAP------------------------------------------------------------------
 st.title(':blue[PhonePe Pulse Data(2018-2022):signal_strength:]')
 st.write("### **:blue[PhonePe India]**")
