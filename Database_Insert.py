@@ -14,7 +14,7 @@ mycursor = PhonePe_Database.cursor()
 # Data_Map_Transaction_Table
 
 #------1------CREATE-----------INSERT---------------------Data_Aggregated_Transaction_Table
-CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Aggregated_Transaction_Table (MyIndex INT NOT NULL AUTO_INCREMENT,Payment_Mode VARCHAR(50),Total_Transactions_count BIGINT,Total_Amount BIGINT,Quarter INT,Year INT,State INT,PRIMARY KEY (MyIndex))"
 mycursor.execute(sql)
 print('Table created successfully.')
@@ -28,7 +28,7 @@ PhonePe_Database.commit()
 mycursor.close()
 
 #------2------CREATE-----------INSERT---------------------Data_Aggregated_User_Summary_Table
-CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Aggregated_User_Summary_Table (MyIndex INT NOT NULL AUTO_INCREMENT,State VARCHAR(50),Year INT,Quarter INT,Registered_Users BIGINT,AppOpenings BIGINT,PRIMARY KEY (MyIndex))"
 mycursor.execute(sql) 
 print('Table created successfully.')
@@ -42,7 +42,7 @@ PhonePe_Database.commit()
 mycursor.close()
 
 #------3------CREATE-----------INSERT------------------------Data_Aggregated_User_Table
-CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Aggregated_User_Table (MyIndex INT NOT NULL AUTO_INCREMENT,Brand_Name VARCHAR(50),Registered_Users_Count BIGINT,Percentage_Share_of_Brand FLOAT,Quarter INT,Year INT,State INT,PRIMARY KEY (MyIndex))"
 mycursor.execute(sql)
 print('Table created successfully.')
@@ -56,6 +56,7 @@ PhonePe_Database.commit()
 mycursor.close()
 
 #------4------CREATE-----------INSERT--------------------------Data_Map_Districts_Longitude_Latitude
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Map_Districts_Longitude_Latitude ( MyIndex INT NOT NULL AUTO_INCREMENT,State VARCHAR(50),District VARCHAR(50),Latitude VARCHAR(50),Longitude VARCHAR(50), PRIMARY KEY (MyIndex))"
 mycursor.execute(sql)
 print('Table created successfully.')
@@ -69,7 +70,7 @@ PhonePe_Database.commit()
 mycursor.close()
 
 #------5------CREATE-----------INSERT-----------------------------Data_Map_IndiaStates_TU
-CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Map_IndiaStates_TU (MyIndex INT NOT NULL AUTO_INCREMENT,state VARCHAR(50),Registered_Users BIGINT,PRIMARY KEY (MyIndex))"
 mycursor.execute(sql)
 print('Table created successfully.')
@@ -83,7 +84,7 @@ PhonePe_Database.commit()
 mycursor.close()
 
 #------6------CREATE-----------INSERT---------------------------------Data_Map_Transaction_Table
-CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
 sql= "CREATE TABLE Data_Map_Transaction_Table (MyId INT NOT NULL AUTO_INCREMENT,Place_Name VARCHAR(50),Total_Transactions_count BIGINT,Total_Amount BIGINT,Quarter INT,Year INT,State INT,MyIndex INT,PRIMARY KEY (MyId))"
 mycursor.execute(sql)
 print('Table created successfully.')
