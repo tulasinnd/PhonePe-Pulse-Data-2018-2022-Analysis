@@ -55,38 +55,6 @@ Total_Transaction=[]
 for i in Transaction_Coropleth_States['Total_Transactions_count']:
     Total_Transaction.append(i)
 Coropleth_Dataset['Total_Transactions']=Total_Transaction
-
-# SCATTER PLOTTTING ALL DISTRICTS OF INDIA WITH LONGITUDE AND LATITUDE VALUES
-# fig=px.scatter_geo(Scatter_Geo_Dataset,
-#                    lon=Scatter_Geo_Dataset['Longitude'],
-#                    lat=Scatter_Geo_Dataset['Latitude'],
-#                    color=Scatter_Geo_Dataset['Total_Transactions'],
-#                    color_continuous_scale = 'Blues',
-#                    hover_name="District", 
-#                    hover_data=["State", "Total_Amount","Total_Transactions","Year_Quarter"],
-#                    title='District',
-#                    size_max=10,)
-# fig.update_geos(fitbounds="locations", visible=False)
-# fig.update_traces(marker=dict(size=6,
-#                   symbol="circle", 
-#                   line=dict(width=2, color="DarkSlateGrey")),
-#                   selector=dict(mode="markers"),)
-# # COROPLETH MAP OF INDIA AND STATES
-# fig_ch = px.choropleth(
-#                 Coropleth_Dataset,
-#                 geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
-#                 featureidkey='properties.ST_NM',
-#                 locations='state',
-#                 color="Total_Transactions",              
-#                 #color_continuous_scale="Viridis",
-#                 #color_continuous_scale = 'Blues',
-#                 hover_name="state", 
-#                 hover_data=["Total_Amount","Total_Transactions","Registered_Users"])
-# fig_ch.update_geos(fitbounds="locations", visible=False)
-# # COMBINE SCATTER AND CHROPLETH USING ADDTRACE
-# fig_ch.add_trace( fig.data[0])
-# st.plotly_chart(fig_ch)
-# st.info('**:blue[The above India map shows the Total Transactions of PhonePe in both state wide and District wide. Please zoom in or full screen for more information]**')
 # -------------------------------------FIGURE1 MAP------------------------------------------------------------------
 #scatter plotting the states codes 
 Indian_States = Indian_States.sort_values(by=['state'], ascending=False)
@@ -104,10 +72,11 @@ fig=px.scatter_geo(Indian_States,
 fig.update_traces(marker=dict(color="white" ,size=0.3))
 fig.update_geos(fitbounds="locations", visible=False,)
 # scatter plotting districts
+Scatter_Geo_Dataset['col']=Scatter_Geo_Dataset['Total_Transactions']
 fig1=px.scatter_geo(Scatter_Geo_Dataset,
                    lon=Scatter_Geo_Dataset['Longitude'],
                    lat=Scatter_Geo_Dataset['Latitude'],
-                   color=Scatter_Geo_Dataset['Total_Transactions'],
+                   color=Scatter_Geo_Dataset['col'],
                    size=Scatter_Geo_Dataset['Total_Transactions'],     
                    #text = Scatter_Geo_Dataset['District'], #It will display district names on map
                    hover_name="District", 
