@@ -66,7 +66,7 @@ fig=px.scatter_geo(Scatter_Geo_Dataset,
                    size_max=10,)
 fig.update_geos(fitbounds="locations", visible=False)
 fig.update_traces(marker=dict(size=6,
-                  symbol="diamond", 
+                  symbol="circle", 
                   line=dict(width=2, color="DarkSlateGrey")),
                   selector=dict(mode="markers"),)
 # COROPLETH MAP OF INDIA AND STATES
