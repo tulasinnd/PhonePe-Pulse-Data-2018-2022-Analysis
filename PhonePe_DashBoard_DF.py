@@ -88,7 +88,7 @@ st.info('**:blue[The above India map shows the Total Transactions of PhonePe in 
 # -----------------------------------------------FIGURE2 BAR------------------------------------------------------------------------
 st.write("### :blue[State & Transactions]")
 Coropleth_Dataset = Coropleth_Dataset.sort_values(by=['Total_Transactions'])
-fig = px.bar(Coropleth_Dataset, x='state', y='Total_Transactions',title='Total Transaction in'+str(year)+"Quarter"+str(quarter)+" in increasing order")
+fig = px.bar(Coropleth_Dataset, x='state', y='Total_Transactions',title='Total Transaction in '+str(year)+" Quarter"+str(quarter)+" in increasing order")
 st.plotly_chart(fig)
 st.info('**:blue[The above bar graph showing the increasing order of PhonePe Transactions according to the states of India, Here we can observe the top states with highest Transaction by looking at graph]**')
 # ------------------------------------------------FIGURE3 BAR--------------------------------------------------------
@@ -145,7 +145,7 @@ del Year_PaymentMode_Table['Quarter']
 del Year_PaymentMode_Table['Year']
 Year_PaymentMode_Table = Year_PaymentMode_Table.sort_values(by=['Total_Transactions_count'])
 fig2= px.bar(Year_PaymentMode_Table, x='states', y='Total_Transactions_count',color="Total_Transactions_count",
-            title='In the Year'+str(Year)+' the '+Mode+" pattern in all states",color_continuous_scale="peach",)
+            title='In the Year '+str(Year)+' the '+Mode+" pattern in all states ",color_continuous_scale="peach",)
 st.plotly_chart(fig2) 
 st.info('**:red[The above bar graph shows the total number of transactions happened in a particular payment mode in all states]**')
 # -------------------------------------------FIGURE5 PIE------------------------------------------------------------
@@ -157,7 +157,7 @@ del years_Table['Quarter']
 years_Table['year']=years_List
 total_trans=years_Table['Total_Transactions_count'].sum() # this data is used in sidebar
 st.markdown(years_Table.style.hide(axis="index").to_html(), unsafe_allow_html=True)
-fig1 = px.pie(years_Table, values='Total_Transactions_count', names='year', title='Total Transactions in different years')
+fig1 = px.pie(years_Table, values='Total_Transactions_count', names='year', title='Total Transactions count in different years')
 st.plotly_chart(fig1)
 st.info('**:blue[The above pie chat shows how the online payments are drastically increased with time.Initially in 2018,2019 the transactions are less but with time the online payments are increased at a high scale via PhonePe. We can clearly see that more than 50% of total Phonepe transactions in india happened are from the year 2022 ]**')
 
@@ -196,7 +196,7 @@ st.info('**:orange[The above donut chat and below bar graph shows how the users 
 #---------------------------------------------------FIGURE7 BAR-------------------------------------------------------------
 b = b.sort_values(by=['Registered_Users_Count'])
 fig4= px.bar(b, x='brand', y='Registered_Users_Count',color="Registered_Users_Count",
-            #title='In the Year'+str(Year)+' the '+Mode+" pattern in all states",
+            title='In '+state+' the Brand Share distribution in '+y,
             color_continuous_scale="oranges",)
 st.plotly_chart(fig4) 
 # --------------------------------------------------FIGURE8 BAR-------------------------------------------
