@@ -246,7 +246,7 @@ st.plotly_chart(fig)
 st.info('**:blue[This bar graph tells how the user base is created in particular state with respect to app openings and Registered users  ]**')
 # -----------------------------------------------------SIDEBAR CODE--------------------------------------------------------
 with st.sidebar:  
-    st.title('# :green[Top states contributing to PhonePe]')
+    st.markdown("# :green[Top states contributing to PhonePe]")
     Data_Map_User_df=Data_Aggregated_User_Summary_df.copy() 
     # st.metric(label="TOTAL TRANSACTIONS BY INDIANS TILL NOW", value=total_t)
     year = st.selectbox(
