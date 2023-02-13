@@ -11,7 +11,9 @@ mycursor = PhonePe_Database.cursor()
 # Data_Aggregated_User_Summary_Table
 # Data_Aggregated_User_Table
 # Data_Map_Districts_Longitude_Latitude
+# Data_Map_IndiaStates_TU
 # Data_Map_Transaction_Table
+# Longitude_Latitude_State_Table
 
 #------1------CREATE-----------INSERT---------------------Data_Aggregated_Transaction_Table
 #CREATE TABLE & INSERT DATAFRAME INTO DATABASE
@@ -97,3 +99,16 @@ print('DataFrame Inserted successfully.')
 PhonePe_Database.commit()
 mycursor.close()
 
+#------7------CREATE-----------INSERT---------------------------------Longitude_Latitude_State_Table
+#CREATE TABLE & INSERT DATAFRAME INTO DATABASE
+sql= "CREATE TABLE Longitude_Latitude_State_Table (MyId INT NOT NULL AUTO_INCREMENT,code VARCHAR(50),Latitude VARCHAR(50),Longitude VARCHAR(50),state VARCHAR(50),PRIMARY KEY (MyId))"
+mycursor.execute(sql)
+print('Table created successfully.')
+PhonePe_Database.commit()
+df=pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\PhonePe_P2\data\Longitude_Latitude_State_Table.csv')
+for index, row in df.iterrows():
+     quer="INSERT INTO PhonePe_Database.Longitude_Latitude_State_Table(code,Latitude,Longitude,state) values(%s,%s,%s,%s)"
+     mycursor.execute(quer,(row.code,row.Latitude,row.Longitude,row.state))
+print('DataFrame Inserted successfully.')
+PhonePe_Database.commit()
+mycursor.close()
