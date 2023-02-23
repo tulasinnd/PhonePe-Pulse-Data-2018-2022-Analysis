@@ -25,14 +25,14 @@ query = 'select * from Longitude_Latitude_State_Table'
 Indian_States = pd.read_sql(query, con = conn)
 
 # DATASETS
-Data_Aggregated_Transaction_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Aggregated_Transaction_Table.csv')
-Data_Aggregated_User_Summary_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Aggregated_User_Summary_Table.csv')
-Data_Aggregated_User_df= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Aggregated_User_Table.csv')
-Scatter_Geo_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Map_Districts_Longitude_Latitude.csv')
-Coropleth_Dataset =  pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Map_IndiaStates_TU.csv')
-Data_Map_Transaction_df = pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Map_Transaction_Table.csv')
-Data_Map_User_Table= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Data_Map_User_Table.csv')
-#Indian_States= pd.read_csv(r'C:\Users\91939\OneDrive\Desktop\DW31_PP\data\Longitude_Latitude_State_Table.csv')
+Data_Aggregated_Transaction_df= pd.read_csv(r'data/Data_Aggregated_Transaction_Table.csv')
+Data_Aggregated_User_Summary_df= pd.read_csv(r'data/Data_Aggregated_User_Summary_Table.csv')
+Data_Aggregated_User_df= pd.read_csv(r'data/Data_Aggregated_User_Table.csv')
+Scatter_Geo_Dataset =  pd.read_csv(r'data/Data_Map_Districts_Longitude_Latitude.csv')
+Coropleth_Dataset =  pd.read_csv(r'data/Data_Map_IndiaStates_TU.csv')
+Data_Map_Transaction_df = pd.read_csv(r'data/Data_Map_Transaction_Table.csv')
+Data_Map_User_Table= pd.read_csv(r'data/Data_Map_User_Table.csv')
+Indian_States= pd.read_csv(r'data/Longitude_Latitude_State_Table.csv')
 colT1,colT2 = st.columns([2,8])
 with colT2:
     st.title(':red[PhonePe Pulse Data Analysis:signal_strength:]')
