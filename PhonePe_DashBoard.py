@@ -479,7 +479,7 @@ with tab3:
     with colT2:
         st.info(
         """
-        Details of Map:        
+        Details of Donut Chart:        
         - Initially we select data by means of State and Year
         - Percentage of registered users is represented with dounut chat through Device Brand
         """
