@@ -27,11 +27,12 @@ THE MAIN COMPONENTS OF DASHBOARD ARE
 district, I have used different graphs available in plotly to represent this data
 
     1 State-wise study
-    The above bar graph shows the increasing order of PhonePe Transactions according to the states of India, Here we can 
-    observe the top states with the highest Transaction by looking at graph
+    The above bar graph shows the increasing order of PhonePe Transactions according to the states of India, 
+    Here we can observe the top states with the highest Transaction by looking at graph
     
     2 District-wise study
-    User can observe how transactions are happening in districts of a selected state.We can observe the leading distric in a state
+    User can observe how transactions are happening in districts of a selected state.We can observe the 
+    leading distric in a state
     
     3 Year-wise study   
     We can observe the states with total transactions in particular mode in the selected year
@@ -40,8 +41,9 @@ district, I have used different graphs available in plotly to represent this dat
     To show how the transactions drastically increased with time
 
 3 User Data Analysis: 
-    The Users data mainly contains the Registered Users count and App openings via different mobile brands  
-in each state and  district,I have used different graphs available in plotly to represent this data
+    The Users data mainly contains the Registered Users count and App openings via different 
+    mobile brands in each state and  district,I have used different graphs available in plotly 
+    to represent this data
 
     1 State-wise study
     User can observe how the App Openings are growing and how Registered users are growing in a state
