@@ -14,12 +14,13 @@ THE MAIN COMPONENTS OF DASHBOARD ARE
     4 TOP STATES DATA
     
 1 Geo-Visualization:
-    The India map shows the Total Transactions of PhonePe in both state wide and District wide. 
-
-    It comes with zoom option and on hover displays the content related to that particular state or district.The main 
+    The India map shows the Total Transactions of PhonePe in both state wide and District wide.It comes with zoom 
+    option and on hover displays the content related to that particular state or district.The main 
     functions I have used to create this map are (User can give year and quarter input to show how the data changed over time)
-    Plotlys scatter_geo for plotting districts along with the conent    
-    Plotlys coropleth for drawing the states in India map    
+    
+    1 Plotlys scatter_geo for plotting districts along with the conent    
+    
+    2 Plotlys coropleth for drawing the states in India map    
     
 2 Transactions Analysis:
     The Transactions data mainly contains the total Transactions count and total amount  in each state and 
