@@ -13,34 +13,38 @@ Geo-Visualization:The India map shows the Total Transactions of PhonePe in both 
 Transactions Analysis: The Transactions data mainly contains the total Transactions count and total amount  in each state and 
 district, I have used different graphs available in plotly to represent this data
 
-    1 State and Total Transactions BAR CHAT (User Input: Year, Quarter)
+    1 State-wise study
     The above bar graph shows the increasing order of PhonePe Transactions according to the states of India, Here we can 
     observe the top states with the highest Transaction by looking at graph
     
-    2 State & PaymentMode BAR CHAT (User Input: Payment Mode, State)
-    The above bar graph shows how each payment mode is performed statewide
+    2 District-wise study
+    User can observe how transactions are happening in districts of a selected state.We can observe the leading distric in a state
     
-    3 PaymentMode and Year  (User Input: Payment Mode, Year)    
-    The above bar graph shows the total number of transactions that happened in a particular payment mode in all states
+    3 Year-wise study   
+    We can observe the states with total transactions in particular mode in the selected year
     
-    4 PIE CHAT
+    4 Overall Analysis
     To show how the transactions drastically increased with time
 
 User Data Analysis: The Users data mainly contains the Registered Users count and App openings via different mobile brands  
 in each state and  district,I have used different graphs available in plotly to represent this data
 
-    1 Brand Share DONUT  &  BAR CHAT   (User Input: State, Year)
-    The above donut chat shows  how the users are registered through different brans in india. We can also see which brand has 
-    more users and the brand with less users
-
-    2  State & Userbase MULTI-BAR CHAT (State)
-    This Multi-bar graph tells how the user base is created in particular state with respect to app openings and Registered users
-
-Top 5 States Data:
-
-    1 DataFrame (User Input:  Year, Quarter, Appopening)
-    Top 5 States With Highest PhonePeApp Openings in given year and Quarter
+    1 State-wise study
+    User can observe how the App Openings are growing and how Registered users are growing in a state
     
-    2 DataFrame (User Input:  Year, Quarter, Registered Users)
-    Top 5 States With Highest Registered Users in given year and Quarter
+    2 District-wise study
+    User can observe how App Openings are happening in districts of a selected state
+    
+    3 Year-wise study   
+    User can observe the top leading brands in a particular state in given year
+    
+    4 Overall Analysis
+    We can see that the Registered Users and App openings are increasing year by year
+    
+Top States Data:
+
+    1 States with top Registered users
+    2 States with top Total Amount Transacted
+    3 States with highest Trabsactions count
+    4 States with top app openings
 
