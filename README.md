@@ -4,9 +4,13 @@ I have created a dashboard to visualize Phonepe pulse Github repository data(htt
 Link for web app is : https://tulasinnd-phonepe-pulse-data-2018-2022-phonepe-dashboard-2drsrt.streamlit.app/
 
 THE MAIN COMPONENTS OF DASHBOARD ARE
+
     1 GEO-VISUALIZATION
+    
     2 TRANSACTIONS ANALYSIS
+    
     3 USERS ANALYSIS
+    
     4 TOP STATES DATA
     
 1 Geo-Visualization:
