@@ -19,7 +19,7 @@ conn=pymysql.connect(
     password=password
 )
 
-# USING PHONEPE DATABASE I HAVE CREATED IN DATABASE-INSTANCE OF RDS
+# USING PhonepeDB I HAVE CREATED IN DATABASE-INSTANCE OF RDS
 mycursor=conn.cursor()
 sql='''USE PhonepeDB'''
 mycursor.execute(sql)
