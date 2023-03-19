@@ -131,7 +131,6 @@ with colT2:
     """
     Details of Map:
     - The darkness of the state color represents the total transactions
-    - The darker the state the higher the transactions
     - The Size of the Circles represents the total transactions dictrict wise
     - The bigger the Circle the higher the transactions
     - Hover data will show the details like Total transactions, Total amount
